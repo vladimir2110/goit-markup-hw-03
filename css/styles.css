@@ -151,7 +151,7 @@ color: var(--primary-color-text);
     background-color: var(--secondary-color-text);
     text-align: center;
     width: 1440px;
-    height: 600px;
+    padding-bottom: 188px;
 }
 
 /* ----------Заголовок------- */
@@ -172,8 +172,7 @@ margin-bottom: 48px;
 }
 .modal-button{
     display: inline-block;
-     width: 169px;
-     height: 56px;
+  
 
     font-family: inherit;
     background: var( --normal-color);
@@ -336,10 +335,10 @@ margin-bottom: 32px;
 .list-button{
 display: flex;
 align-items: center;
-
+justify-content: center;
 padding-top: 96px;
 padding-bottom: 72px;
-height: 48px;
+
 }
 .list-button-item:not(:last-child){
 margin-right: 24px;
@@ -388,18 +387,45 @@ color:var(--normal-color);
 }
 .list-projects{
     list-style: none; 
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 156px;
+    margin-right: 156px;
+    
 }
+.project-card:not(:nth-child(3n)){
+margin-right: 24px;
+}
+
 .project-card{
-    background: #FFFFFF;
+    display: flex;   
+    margin-bottom: 48px;
 }
+
+.project-card{
+    
+    width: 360px;
+    height: 420px;
+    background: #FFFFFF;
+    border: 1px solid #E7E9FC;   
+}
+
 .list-projects-title{
+
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 /* identical to box height, or 120% */
 letter-spacing: 0.02em;
+
+padding-top: 32px;
+
 }
 .text{
+
+padding-top: 8px;
+padding-bottom: 32px;
+
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
@@ -415,16 +441,19 @@ letter-spacing: 0.02em;
 
 .footer {
     background-color:  var(--secondary-color-text);
-    width: 1440px;
-    height: 310px;
+  
+    
 }
 
 .container{
-    display: block;
-    background: #FFFFFF;
+    display: flex;
+   flex-direction: column;
    padding-top: 100px;
+   padding-bottom: 100px;
+   margin-left: 156px;
+  
     width: 264px;
-    height: 110px;
+   
     
     
 }
