@@ -11,6 +11,7 @@ h3,
 p{
     margin-top: 0;
     margin-bottom: 0;
+  
 }
 ul,
 ol{
@@ -36,7 +37,7 @@ body {
     font-family: 'Roboto',sans-serif;
    color: var(--primary-color-text);
    background-color: #FFFFFF;
-   width: 1440px;
+ 
 }
 /*------ header--------- */
 .header {
@@ -47,6 +48,9 @@ padding-top: 24px;
 }
 
 .container-header{
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 156px;
     display: flex;
     align-items: center;
 
@@ -70,12 +74,9 @@ line-height: 1.33;
 letter-spacing: 0.03em;
     color: var(--normal-color);
     text-transform: uppercase;
-
-    margin-right: 76px;
-    margin-left: 156px;
-    padding-left: 15px;
     
 }
+
  .style{
     color: var(--secondary-color-text);
 }
@@ -83,6 +84,7 @@ letter-spacing: 0.03em;
     list-style: none;
     display: flex;
     align-items: center;
+    margin-left: 76px;
 
 } 
 .list-link .item:not(:last-child){
@@ -130,11 +132,12 @@ line-height: 1.5;
 color: var(--primary-color-text);
 }
 
+.list-item-phone{
+    margin-left: 40px;
+}
 
 .list-contacts-phone-number {
-    margin-left: 40px;
-    margin-right: 156px;
-    padding-right: 15px;
+    
 
     text-decoration: none;
 font-size: 16px;
@@ -151,9 +154,16 @@ color: var(--primary-color-text);
     background-color: var(--secondary-color-text);
     text-align: center;
     width: 1440px;
+    padding-top: 188px;
     padding-bottom: 188px;
-}
 
+}
+ .container-hero{
+   
+    margin: 0px 473px;
+    padding: 0px 15px;
+   
+ }
 /* ----------Заголовок------- */
 .main-title {
 font-weight: 700;
@@ -161,19 +171,17 @@ font-size: 56px;
 line-height: 1.07em;
 /* or 107% */
 
-
 letter-spacing: 0.02em;
 
 color: #FFFFFF;
-
-
-padding-top: 188px;
 margin-bottom: 48px;
-}
-.modal-button{
-    display: inline-block;
-  
 
+}
+
+
+.modal-button{
+    width: 169px;
+    height: 56px;
     font-family: inherit;
     background: var( --normal-color);
     font-weight: 500;
@@ -184,6 +192,7 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 
 color: #FFFFFF;
+border-radius: 4px;
 }
 
 .modal-button:hover,
@@ -193,11 +202,21 @@ color: #FFFFFF;
 .modal-button{
     cursor: pointer;
 }
+
 h2, h3{
     color: var(--secondary-color-text);
 }
 /* --------section----- */
+.skills{
+padding: 120px 0
 
+}
+.container-skills{
+    display: flex;
+    width: 1158px;
+padding: 0 15px;
+margin: 0 141px;
+}
 .visually-hidden {
         position: absolute;
           white-space: nowrap;
@@ -214,12 +233,7 @@ h2, h3{
 .menu-skills {
     list-style: none;
     display: flex;
-    margin-right: 141px;
-    margin-left: 141px;
-    padding-top: 144px;
-    padding-bottom: 96px;
-    padding-left: 15px;
-    padding-right: 15px;
+   
 }
 
 
@@ -247,10 +261,15 @@ letter-spacing: 0.02em;
 
 /* --------section------ */
 .photos-work{
-    margin-left: 156px;
-    margin-right: 156px;
-    padding-bottom: 111px;
    
+    padding-bottom: 120px;
+   
+}
+.container-photos-work{
+   width: 1128px;
+padding: 0 15px;
+margin: 0 156px;
+
 }
 
 .photos-work-title {
@@ -265,26 +284,32 @@ letter-spacing: 0.02em;
 }
 .list-photo-work{
     list-style: none;
-    display: flex;
-    justify-content: space-between;
+   display: flex; 
+   
 }
-
-
-
-
+.illustraition:not(:last-child){
+    margin-right: 24px;
+}
 
 /* -------section--------- */
 .team-card{
+
+    padding: 120px 0;
+
     background: #F4F4FD;
   
 }
+.container-team-card{
+   
+    width: 1440px;
+
+}
+
 .team-card-title {
 font-weight: 700;
 font-size: 36px;
 line-height: 1.1;
 /* identical to box height, or 111% */
-
-padding-top: 120px;
 
 text-align: center;
 letter-spacing: 0.02em;
@@ -293,14 +318,21 @@ letter-spacing: 0.02em;
 .list-team-card{
     list-style: none;
     display: flex;
-    margin-left: 156px;
-    margin-right: 156px;
+   
     margin-top: 72px;
-    padding-bottom: 120px;
-    gap: 24px;
 } 
+.container-list-team-card{
+    display: flex;
+    padding: 0 15px;
+   
+    margin:0 156px;
+}
 .personal-photo{
     background: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+}
+.personal-photo:not(:last-child){
+margin-right: 24px;
 }
 .name {
 font-weight: 500;
@@ -308,7 +340,7 @@ font-size: 20px;
 line-height:1.2;
 /* identical to box height, or 120% */
 
-padding-top: 32px;
+margin-top: 32px;
 margin-bottom: 8px;
 
 text-align: center;
@@ -322,24 +354,39 @@ line-height: 1.5;
 text-align: center;
 letter-spacing: 0.02em;
 
-margin-bottom: 32px;
+padding-bottom: 32px;
 }
 
 /* css для portfolio.html */
 
 
+.gellery{
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.container-section{
+   
+    
+padding: 0 15px;
+margin: 0 156px;
+width: 1158px;
+}
+
 .list-button{
-    list-style: none;
+   width: 600px;
+   list-style: none;
+   margin-left: auto;
+   margin-right: auto;
    
 }
-.list-button{
-display: flex;
-align-items: center;
-justify-content: center;
-padding-top: 96px;
-padding-bottom: 72px;
 
+.list-button{
+    display: flex;
+    align-items: center;
+    margin-bottom: 72px;
 }
+
 .list-button-item:not(:last-child){
 margin-right: 24px;
 }
@@ -364,6 +411,10 @@ letter-spacing: 0.04em;
 color:var(--normal-color);
 }
 .button{
+    
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 4px ;
     cursor: pointer;
 }
 .button:hover,
@@ -381,16 +432,11 @@ color:var(--normal-color);
     
     color: #FFFFFF;
 }
-.button-name{
-    display: inline-block;
-    padding: 12px 24px;
-}
+
 .list-projects{
-    list-style: none; 
-    display: flex;
+   display: flex;
     flex-wrap: wrap;
-    margin-left: 156px;
-    margin-right: 156px;
+    
     
 }
 .project-card:not(:nth-child(3n)){
@@ -407,7 +453,18 @@ margin-right: 24px;
     width: 360px;
     height: 420px;
     background: #FFFFFF;
-    border: 1px solid #E7E9FC;   
+     
+}
+.container-border{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+   
+
+    border-radius: 0px 0px 4px 4px; 
+    border-left: 1px solid #E7E9FC; 
+    border-right: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .list-projects-title{
@@ -418,13 +475,13 @@ line-height: 1.2;
 /* identical to box height, or 120% */
 letter-spacing: 0.02em;
 
-padding-top: 32px;
+
 
 }
 .text{
 
-padding-top: 8px;
-padding-bottom: 32px;
+margin-top: 8px;
+
 
 font-weight: 400;
 font-size: 16px;
@@ -438,25 +495,25 @@ letter-spacing: 0.02em;
     color: var(--primary-color-text)
 }
 
-
+/* ---footer---- */
 .footer {
     background-color:  var(--secondary-color-text);
-  
+  padding: 100px 0;
     
 }
 
-.container{
-    display: flex;
-   flex-direction: column;
-   padding-top: 100px;
-   padding-bottom: 100px;
-   margin-left: 156px;
+.container-footer{
+   width: 1158px; 
   
-    width: 264px;
-   
-    
-    
+   padding: 0 15px;
+   margin-right: auto;
+   margin-left: 156px;
 }
+
+
+    
+ 
+
 .logo-link-dark-theme {
     text-decoration: none;
 }
@@ -476,6 +533,7 @@ letter-spacing: 0.02em;
     color: #F4F4FD;
 }
 .footer-text {
+    width: 264px;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
