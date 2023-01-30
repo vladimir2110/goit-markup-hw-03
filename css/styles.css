@@ -392,7 +392,7 @@ margin-right: 24px;
 }
 
 .button{
-
+border: none;
 /* CLOUD */
 
 background: #F4F4FD;
@@ -434,11 +434,17 @@ color:var(--normal-color);
 }
 
 .list-projects{
+ 
    display: flex;
     flex-wrap: wrap;
     
     
 }
+.link-project{
+    text-decoration: none;
+}
+
+
 .project-card:not(:nth-child(3n)){
 margin-right: 24px;
 }
@@ -527,13 +533,14 @@ letter-spacing: 0.02em;
         color: var(--normal-color);
         text-transform: uppercase;
 
-        margin-bottom: 16px;
+      
 }
 .logo-link-dark-theme .style{
     color: #F4F4FD;
 }
 .footer-text {
     width: 264px;
+    margin-top: 16px;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
